@@ -21,7 +21,7 @@
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#inicio" class="nav-link ">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a href="#sobre" class="nav-link">Sobre</a>
@@ -32,7 +32,17 @@
             </ul>
         </div>
     </nav>
-    <section id="banner" class="carousel slide">
+    <section id="banner" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
         <main class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./img/carousel-1.jpg" class="d-block w-100">
@@ -44,17 +54,26 @@
                 <img src="./img/carousel-3.jpg" class="d-block w-100">
             </div>
         </main>
-        <button class="carousel-control-prev" type="button" data-bs-target="#banner"
-            data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#banner"
-            data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </section>
+        </section>
+        <section id="sobre" class="row vh-100">
+            <main class="col-7 bg-info d-flex align-items-center">
+                <div class="quem-somos container px-5">
+                    <h1 class="text-center">Sobre Box Horse</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In necessitatibus perferendis iste maiores quia recusandae minus ea at, labore atque. Itaque cum dignissimos pariatur commodi corrupti nulla cumque deserunt? Corporis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In necessitatibus perferendis iste maiores quia recusandae minus ea at, labore atque. Itaque cum dignissimos pariatur commodi corrupti nulla cumque deserunt? Corporis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In necessitatibus perferendis iste maiores quia recusandae minus ea at, labore atque. Itaque cum dignissimos pariatur commodi corrupti nulla cumque deserunt? Corporis.</p>
+                </div>
+            </main>
+            <div class="col quem-somos-img">Coluna 2</div>
+        </section>
 </body>
 
 </html>
